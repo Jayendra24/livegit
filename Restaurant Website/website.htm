@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+    background: linear-gradient(to right,rgb(241, 57, 149),rgb(172, 45, 204));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+div.gallery {
+    margin: 10px;
+    border: 1px solid black;
+    float: left;
+    width: 260px;
+}
+
+div.gallery:hover {
+    border: 1px solid black;
+}
+
+div.gallery img {
+    width:100%;
+    height:100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: none;
+}
+
+.flex > div {
+    background-color: rgb(255, 208, 0);
+    width: 240px;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+button {
+    background: rgb(255, 208, 0);
+    border: 0;
+    padding: 10px 20px;
+}
+
+.main{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.center {
+    top: 45%;
+    width: 18%;
+    text-align: left;
+    font-size: 30px;
+    background-color: rgb(255, 208, 0);
+    color: black;
+    margin-left: 40px;
+}
+
+.responsive {
+    padding: 10px 10px;
+    float: left;
+    width: 18%;
+}
+
+.image-gallery h3::before {
+    display: block;
+    content: '';
+    height: 10px;
+    color: rgb(255, 208, 0);
+    background-image: linear-gradient(to left, #ffc600 , #ffc60000);
+    float: left;
+    width: 41%;
+    margin-top: 1%;
+    padding-top: 0%;
+}
+
+.image-gallery h3::after {
+    display: block;
+    content: '';
+    color: rgb(255, 208, 0);
+    background-image: linear-gradient(to right, #ffc600 , #ffc60000 );
+    width: 43%;
+    display: inline-block;
+    float: right ;
+    margin-top: 1% ;
+    padding-top: 0%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 50%;
+      margin: 6px 0;  
+    }
+}
+
+@media only screen and (max-width) {
+    .responsive {
+        width: 100%;
+    }
+}
+    
+.clearfix.after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery1 {
+    border:1px solid black;
+    float: left;
+    width: 100%;
+    height: 50%;
+    margin: 20px;
+}
+
+.instant {
+    color: black;
+    text-align: center;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+#lightbox1 {
+    margin-left: 38px;
+    margin-top: 15px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    background: white;
+}
+    
+#lightbox2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+}    
+
+#lightbox3 {
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+}
+#lightbox4 {
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+}
+#lightbox5 {
+    margin-left: 32px;
+    margin-top: 25px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    height:  400px;
+    width:  1266px;
+    background: white;
+}
+
+#lightbox6 {
+    margin-top: -30.5%;
+    margin-right: 39px;
+    border: 1px solid black;
+    float: right;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    width: 380px;
+    height: 190px;
+    background: rgb(255, 208, 0);
+}
+
+#lightbox7 {
+    background: rgb(255, 208, 0);
+    margin-right: 39px;
+    margin-top: -15%;
+    border: 1px solid black;
+    float: right;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    width: 380px;
+    height: 190px;
+}
+.button {
+    background-color: rgb(255, 208, 0);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: 
+rotate(-45deg);
+}
+
+.image {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    margin-left: 41px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="flex">
+    <div><strong>TACOS</strong></div>
+   <div><strong>BEERS</strong></div>
+   <div><strong>WINES</strong></div>
+   <div><strong>DESSERTS</strong></div>
+   <div><strong>RESERVATION</strong></div>
+</div>
+
+<div class="image" >
+    <img src="./images/taco1.jpg" alt="tacos" width="850px" height="400px">
+<div class="center"><b>Terry's Taco Joint</b>
+    <br>
+    <b><small>Preety Good Tacos!</small></b>
+    </div>
+</div>
+<div id="lightbox6">
+    <h1 style="font-size: 50px;">$1.99</h1>
+    <h3><small>Tacos</small></h3>
+</div>
+<div id="lightbox7">
+    <h1 style="font-size: 50px;">$3.99</h1>
+    <h3><small>Kombucha</small></h3>
+</div>
+</div>
+
+<div id="lightbox1">   
+            <span style='font-size: 100px;'>🌮 </span>
+            <h3><strong>Tacos<strong></h3>
+            <h4><small >Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+    </div>
+<div id="lightbox2">  
+            <span style="font-size: 100px;">🍺 </span>
+            <h3><strong>Beer<strong></h3>
+            <h4><small>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+    </div>  
+<div id="lightbox3"> 
+            <span style="font-size: 100px;">🍷 </span>
+            <h3><strong>Wine</strong></h3>
+            <h4><small>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+    </div>
+<div id="lightbox4">
+            <span style="font-size: 100px;">🎵 </span>
+            <h3><strong>Music</strong></h3>
+            <h4><small>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+    </div>
+
+    <div id="lightbox5">
+        <img src="./images/img0.png"  alt="tacos" style="width: 300px; height:250px">
+        <div class="paragraph">
+            <h2>Featured Taco</h2>
+            <h3><small>Slim Profile, easy to hold and loaded with cheese.</br>This is the one you have been waiting for</small></h3>
+            <button>Learn More ➡</button>
+    </a>
+    </div>
+
+    <div class="image-gallery h2:before::after">
+        <h2><strong>Instant Grams</strong></h2>
+    </div>
+
+  
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img1.jif">
+                <img src="./images/img1.jif" alt="img1" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img2.jif">
+                <img src="./images/img2.jif" alt="img2" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img3.jif">
+                <img src="./images/img3.jif" alt="img3" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img4.jif">
+                <img src="./images/img4.jif" alt="img4" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img5.jif">
+                <img src="./images/img5.jif" alt="img5" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+    
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img6.jif">
+                <img src="./images/img6.jif" alt="img6" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img7.jif">
+                <img src="./images/img7.jif" alt="img7" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img8.jif">
+                <img src="./images/img8.jif" alt="img8" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+    
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/img9.jif">
+                <img src="./images/img9.jif" alt="img9" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+    
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="">
+                <img src="./images/img10.jif" alt="img10" width="600px" height="400px">
+            </a>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+    
+
+
+    
+
+        
+
+
