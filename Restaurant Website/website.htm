@@ -11,8 +11,10 @@ body {
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
 }
+
+/* for image gallery*/ 
 div.gallery {
-    margin: 10px;
+    margin: 5px;
     border: 1px solid black;
     float: left;
     width: 260px;
@@ -27,47 +29,26 @@ div.gallery img {
     height:100%;
 }
 
+/*for nav bar*/
 .flex {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     background-color: none;
 }
 
 .flex > div {
     background-color: rgb(255, 208, 0);
     width: 240px;
-    height: auto;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     line-height: 50px;
     font-size: 20px;
 }
 
-button {
-    background: rgb(255, 208, 0);
-    border: 0;
-    padding: 10px 20px;
-}
-
-.main{
-    display: grid;
-    grid-gap: 10px;
-}
-
-.menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 8px;
-    font-family: 'Roboto', sans-serif;
-}
-
 .center {
     top: 45%;
     width: 18%;
+    position: absolute;
     text-align: left;
     font-size: 30px;
     background-color: rgb(255, 208, 0);
@@ -79,30 +60,6 @@ button {
     padding: 10px 10px;
     float: left;
     width: 18%;
-}
-
-.image-gallery h3::before {
-    display: block;
-    content: '';
-    height: 10px;
-    color: rgb(255, 208, 0);
-    background-image: linear-gradient(to left, #ffc600 , #ffc60000);
-    float: left;
-    width: 41%;
-    margin-top: 1%;
-    padding-top: 0%;
-}
-
-.image-gallery h3::after {
-    display: block;
-    content: '';
-    color: rgb(255, 208, 0);
-    background-image: linear-gradient(to right, #ffc600 , #ffc60000 );
-    width: 43%;
-    display: inline-block;
-    float: right ;
-    margin-top: 1% ;
-    padding-top: 0%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -117,30 +74,9 @@ button {
         width: 100%;
     }
 }
-    
-.clearfix.after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-.gallery1 {
-    border:1px solid black;
-    float: left;
-    width: 100%;
-    height: 50%;
-    margin: 20px;
-}
-
-.instant {
-    color: black;
-    text-align: center;
-}
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-#lightbox1 {
+/*for emoji-boxes*/
+#box1 {
     margin-left: 38px;
     margin-top: 15px;
     border: 1px solid black;
@@ -151,7 +87,7 @@ div.desc {
     background: white;
 }
     
-#lightbox2 {
+#box2 {
     margin-left: 15px;
     margin-top: 15px;
     border: 1px solid black;
@@ -162,7 +98,7 @@ div.desc {
     background-color: white;
 }    
 
-#lightbox3 {
+#box3 {
     margin-left: 15px;
     margin-top: 15px;
     border: 1px solid black;
@@ -172,7 +108,7 @@ div.desc {
     height: 250px;
     background-color: white;
 }
-#lightbox4 {
+#box4 {
     margin-left: 15px;
     margin-top: 15px;
     border: 1px solid black;
@@ -182,20 +118,24 @@ div.desc {
     height: 250px;
     background-color: white;
 }
-#lightbox5 {
+
+/* for tacos image */
+#box5 {
     margin-left: 32px;
     margin-top: 25px;
     border: 1px solid black;
     float: left;
     text-align: center;
-    height:  400px;
+    height:  450px;
     width:  1266px;
     background: white;
 }
 
-#lightbox6 {
-    margin-top: -30.5%;
-    margin-right: 39px;
+/* for two boxes for price */
+#box6 {
+    margin-top: 0px;
+    margin-right: 40px;
+    background: rgb(255, 208, 0);
     border: 1px solid black;
     float: right;
     display: grid;
@@ -203,15 +143,14 @@ div.desc {
     justify-items: center;
     align-content: center;
     text-align: center;
-    width: 380px;
-    height: 190px;
-    background: rgb(255, 208, 0);
+    width: 370px;
+    height: 235px;
 }
 
-#lightbox7 {
+#box7 {
     background: rgb(255, 208, 0);
-    margin-right: 39px;
-    margin-top: -15%;
+    margin-right: 40px;
+    margin-top: -240px;
     border: 1px solid black;
     float: right;
     display: grid;
@@ -219,9 +158,11 @@ div.desc {
     justify-items: center;
     align-content: center;
     text-align: center;
-    width: 380px;
-    height: 190px;
+    width: 370px;
+    height: 235px;
 }
+
+/* for button*/
 .button {
     background-color: rgb(255, 208, 0);
     border: none;
@@ -242,24 +183,55 @@ div.desc {
     padding: 3px;
 }
 
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: 
-rotate(-45deg);
-}
 
+
+/* for image1*/
 .image {
     float: left;
     width: 100%;
     height: 100%;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 41px;
+    margin-bottom: 17px;
 }
+
+/* for gradient effect for instant grams*/
+.image-gallery h2::before {
+    display: block;
+    content: '';
+    height: 10px;
+    color: rgb(255, 208, 0);
+    background-image: linear-gradient(to left, #ffc600 , #ffc60000);
+    float: left;
+    width: 41%;
+    margin-top: 1%;
+    padding-top: 0%;
+}
+
+.image-gallery h2::after {
+    display: block;
+    content: '';
+    color: rgb(255, 208, 0);
+    background-image: linear-gradient(to right, #ffc600 , #ffc60000 );
+    width: 43%;
+    display: inline-block;
+    float: right ;
+    margin-top: 1% ;
+    padding-top: 0%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -10px;
+}
+
+
 
 </style>
 </head>
 <body>
 
+<!---For Nav-bar-->    
 <div class="flex">
     <div><strong>TACOS</strong></div>
    <div><strong>BEERS</strong></div>
@@ -267,140 +239,86 @@ rotate(-45deg);
    <div><strong>DESSERTS</strong></div>
    <div><strong>RESERVATION</strong></div>
 </div>
+<!--Nav-bar ends-->
 
+<!--tacos image with two boxes-->
 <div class="image" >
-    <img src="./images/taco1.jpg" alt="tacos" width="850px" height="400px">
-<div class="center"><b>Terry's Taco Joint</b>
+</div class="subhead">
+    <img src="./images/taco1.jpg" alt="tacos" width="900px" height="500px">
+    <div class="center"><b>Terry's Taco Joint</b>
     <br>
     <b><small>Preety Good Tacos!</small></b>
-    </div>
 </div>
-<div id="lightbox6">
+
+<div id="box6">
     <h1 style="font-size: 50px;">$1.99</h1>
     <h3><small>Tacos</small></h3>
 </div>
-<div id="lightbox7">
+<div id="box7">
     <h1 style="font-size: 50px;">$3.99</h1>
-    <h3><small>Kombucha</small></h3>
+    <h3><small>Kombucha</small></p>
 </div>
 </div>
+<!-- tacos image with two boxes ends-->
 
-<div id="lightbox1">   
+
+<!--Emoji boxes starts from here-->
+<section class="features">
+<div id="feature1">   
             <span style='font-size: 100px;'>🌮 </span>
             <h3><strong>Tacos<strong></h3>
-            <h4><small >Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
     </div>
-<div id="lightbox2">  
+<div id="feature2">  
             <span style="font-size: 100px;">🍺 </span>
             <h3><strong>Beer<strong></h3>
-            <h4><small>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
     </div>  
-<div id="lightbox3"> 
+<div id="feature3"> 
             <span style="font-size: 100px;">🍷 </span>
             <h3><strong>Wine</strong></h3>
-            <h4><small>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
     </div>
-<div id="lightbox4">
+<div class="feature4">
             <span style="font-size: 100px;">🎵 </span>
             <h3><strong>Music</strong></h3>
-            <h4><small>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur<br> adispising elit. Animi, assumenda.</p>
     </div>
+</section>
+<!--emoji boxes ends here-->
 
-    <div id="lightbox5">
+
+<!--middle image with button-->
+    <section class="about">
         <img src="./images/img0.png"  alt="tacos" style="width: 300px; height:250px">
-        <div class="paragraph">
+        <div class="about_detils">
             <h2>Featured Taco</h2>
-            <h3><small>Slim Profile, easy to hold and loaded with cheese.</br>This is the one you have been waiting for</small></h3>
+            <p>Slim Profile, easy to hold and loaded with cheese.</br>This is the one you have been waiting for</p>
             <button>Learn More ➡</button>
-    </a>
-    </div>
+       </div>
+    </section>
+<!--middle image with button ends here-->
 
-    <div class="image-gallery h2:before::after">
+
+<!--this is image gallery-->
+    <section class="image-gallery h2:before::after">
         <h2><strong>Instant Grams</strong></h2>
-    </div>
-
-  
-
+<div>
     <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img1.jif">
-                <img src="./images/img1.jif" alt="img1" width="600px" height="400px">
-            </a>
-        </div>
+    </div class="gallery">
+        <img src="./images/img1.jif" alt="" width="250px" height="250px">
+        <img src="./images/img2.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img3.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img4.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img5.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img6.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img7.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img8.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img9.jif"  alt="" width="250px" height="250px">
+        <img src="./images/img10.jif"  alt="" width="250px" height="250px">
+    </section>    
     </div>
-
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img2.jif">
-                <img src="./images/img2.jif" alt="img2" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img3.jif">
-                <img src="./images/img3.jif" alt="img3" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img4.jif">
-                <img src="./images/img4.jif" alt="img4" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img5.jif">
-                <img src="./images/img5.jif" alt="img5" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-    
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img6.jif">
-                <img src="./images/img6.jif" alt="img6" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img7.jif">
-                <img src="./images/img7.jif" alt="img7" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img8.jif">
-                <img src="./images/img8.jif" alt="img8" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-    
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/img9.jif">
-                <img src="./images/img9.jif" alt="img9" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-    
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="">
-                <img src="./images/img10.jif" alt="img10" width="600px" height="400px">
-            </a>
-        </div>
-    </div>
-    
+    <!--image gallery ends here-->
 
 </body>
 </html>
